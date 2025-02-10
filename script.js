@@ -16,5 +16,5 @@ function secuenciaFibonacci() {
     fibonacci = fibonacci.slice(0, entrada);
 
     const elementoSalida = document.getElementById("salida");
-    elementoSalida.innerText = "Serie de Fibonacci: " + fibonacci.join(", ");
+    elementoSalida.innerText = "Secuencia de Fibonacci: " + fibonacci.join(", ");
 }
