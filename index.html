@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Secuencia Fibonacci</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" href="https://img.icons8.com/pulsar-color/48/fibonacci-circles.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Qwigley&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Qwigley&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>Secuencia de Fibonacci</h1>
-    <label>
-    <input type="number" id="numeroInput" placeholder="Ingresa un número:" min="1">
-    <button onclick="secuenciaFibonacci()">Generar</button>
-    </label>
-    <div class="output" id="salida"></div>
+    <div class="contenido">
+        <h1>Secuencia de Fibonacci</h1>
+        <div class="input-container">
+            <input type="number" id="numeroInput" required="" min="1">
+            <label for="input" class="label">Ingresa un número</label>
+            <div class="underline"></div>
+        </div>
+        <div class="button-container">
+            <button onclick="secuenciaFibonacci()">Generar</button>
+        </div>
+        <div class="output" id="salida"></div>
+    </div>
 
     <script src="./script.js"></script>
 </body>
+
 </html>

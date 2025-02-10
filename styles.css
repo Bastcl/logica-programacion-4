@@ -1,1 +1,106 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
 
+}
+
+/* From Uiverse.io by Satwinder04 */
+.input-container {
+    position: relative;
+    margin: 50px auto;
+    width: 300px;
+}
+
+.input-container input[type="number"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.input-container input[type="number"]:focus~.label,
+.input-container input[type="number"]:valid~.label {
+    top: -20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.input-container input[type="number"]:focus~.underline,
+.input-container input[type="number"]:valid~.underline {
+    transform: scaleX(1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    width: 305px;
+}
+
+button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+
+.output {
+
+    margin: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+h1 {
+    margin: 50px;
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72px;
+    text-align: center;
+}
+
+.contenido {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: darkred;
+}
